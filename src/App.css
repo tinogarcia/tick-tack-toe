@@ -1,0 +1,78 @@
+body {
+  background-color: #212529 !important; 
+  color: white !important;
+}
+
+main {
+  min-width: 800px;
+  width: 100%;
+  margin-top: 15px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+}
+
+.square.center {
+  border: 2px dashed #f7d51d;
+}
+
+.square.centertop {
+  border-left: 2px dashed #f7d51d;
+  border-right: 2px dashed #f7d51d;
+}
+
+.square.centerbottom {
+  border-left: 2px dashed #f7d51d;
+  border-right: 2px dashed #f7d51d;
+}
+
+.square.centerleft {
+  border-top: 2px dashed #f7d51d;
+  border-bottom: 2px dashed #f7d51d;
+}
+
+.square.centerright {
+  border-top: 2px dashed #f7d51d;
+  border-bottom: 2px dashed #f7d51d;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  gap: 35px;
+}
+
+.turn button {
+  pointer-events: none;
+}
+
+.nes-icon.close::before  {
+  color: white !important;
+}
+
+footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
